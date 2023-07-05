@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY NOTES</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            /* background-color: #fefbe9; */
+        }
+        body{
+            background-color: #fefbe9;
+            /* z-index: -1; */
+        }
+        .navbar ul{
+           display: flex;
+           list-style: none;
+           flex-wrap: wrap;
+           background-color: #cbffbb;
+        }
+        .navbar ul li{
+           color: #009f17;
+           padding: 10px 10px;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: #009f17;
+        }
+        #h{
+            padding: 14px 35px;
+        }
+        #s1{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        #s1 p{
+            margin: 10px 7px;
+            color: #f6c453;
+            font-weight: bold;
+        }
+        .button{
+            margin: 10px 15px;
+            background-color: #f6c453;
+            color: white;
+            font-size: 17px;
+            width: 100px;
+            padding: 10px 5px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .s2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .d1{
+            margin: 15px 15px;
+            width: 150px;
+            background-color: #cbffbb;
+            color: #009f17;
+            border-radius: 4px;
+            padding: 10px 10px;
+        }
+        #search{
+            position: absolute;
+            right: 10px;
+            margin: 1px 7px;
+            padding: 3px 4px;
+            
+        }
+        @media only screen and (max-width:600px){
+            .navbar ul{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #search{
+                position: static;
+            }
+            
+        }
+    </style>   
+</head>
+<body>
+ <nav class="navbar" id="navb">
+     <ul>
+         <li>
+             <h1>MY NOTES</h1>
+         </li>
+         <li id="h">Home</li>
+         <li id="h"><a href="notesf.html">Favourite</a></li>
+         <li><input  id="search" type="search" placeholder="search here"></input></li>
+     </ul>
+ </nav>
+ <section id="s1">
+    <p>ADD TITLE OF NOTE HERE</p>
+    <textarea id="titlesa" style="margin: 4px 10px ;  width:90%; height:30px; font-size: 18px; padding: 10px ;"></textarea>
+    <p>ADD YOUR NOTES FROM BELOW</p>
+    <textarea id="texta" style="margin: 4px 10px ;  width:90%; height:200px; font-size: 18px; padding: 10px ;"></textarea>
+    <button class="button" id="b1">Add Note</button>
+ </section>
+ <section id="s2" class="s2">
+     <!-- <div class="d1">
+       <h3>deep</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam dolorem facilis.</p>
+       <button  id="b1" class="button">Delete Node</button>
+     </div> -->
+     <!-- <div class="d1">
+        <h3>deep</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam dolorem facilis.</p>
+        <button  id="b1">Delete Node</button>
+      </div>
+      <div class="d1">
+        <h3>deep</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam dolorem facilis.</p>
+        <button  id="b1">Delete Node</button>
+      </div>
+      <div class="d1">
+         <h3>deep</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam dolorem facilis.</p>
+         <button  id="b1">Delete Node</button>
+       </div> -->
+ </section>   
+ <script src="notes.js"></script>
+</body>
+</html>
